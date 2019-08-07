@@ -1,0 +1,135 @@
+.block-bottom {
+  display: flex;
+  justify-content: flex-start;
+  @media screen and(min-width:640px) {
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 27px;
+  }
+}
+
+.btn {
+  font-size: 13px;
+  line-height: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.block-btn-adress {
+  position: relative;
+  &::after {
+    content: "to";
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    color: #626262;
+    top: 10px;
+    @media screen and(min-width:640px) {
+      left: 65px;
+    }
+    @media screen and(min-width:1024px) {
+      left: 71px;
+    }
+  }
+}
+
+.sign-in {
+  background: #fff;
+  color: black;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0;
+}
+
+.block-btn {
+  height: 40px;
+  width: 72px;
+}
+
+.block-btn:nth-child(1) {
+  margin-right: 12px;
+}
+
+.regist {
+  background: #262626;
+  color: white;
+  border: 1px solid #262626;
+  border-radius: 2px;
+}
+
+.btn-adress {
+  justify-content: center;
+  align-items: center;
+  @media screen and(min-width:640px) {
+    justify-content: flex-start;
+    margin-left: 22px;
+  }
+
+  @media screen and(min-width:1024px) {
+    margin-left: 135px;
+  }
+}
+
+.link-adress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1d1d1d;
+  font-size: 13px;
+  line-height: 24px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px;
+}
+
+.when {
+  width: 60px;
+  margin-right: 16px;
+  @media screen and(min-width:640px) {
+    width: 56px;
+    margin-right: 32px;
+  }
+
+  @media screen and(min-width:1024px) {
+    width: 65px;
+  }
+}
+
+.to {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  width: 220px;
+  @media screen and(min-width:640px) {
+    width: 215px;
+  }
+
+  @media screen and(min-width:1024px) {
+    width: 292px;
+  }
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 15px;
+    position: relative;
+    right: 10px;
+    background-image: url(../images/location.svg);
+  }
+}
+
+.choose-language {
+  .btn-choose-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    line-height: 100%;
+    color: #fff;
+  }
+}
