@@ -1,0 +1,265 @@
+// @import "utils";
+@import "buttons";
+@import "images";
+@import "reset";
+@import "display";
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+}
+
+header > div {
+  padding: 0 8px;
+}
+
+.link-hover:hover {
+  transform: scale(1.2);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  margin: 40px 0;
+  position: relative;
+
+  .search-input {
+    width: 100%;
+    height: 24px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    margin-left: 13px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px solid #757575;
+    top: 33px;
+    left: 8px;
+    right: 8px;
+  }
+}
+
+.text {
+  margin-bottom: 8px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #626262;
+}
+
+main {
+  padding: 40px 0 32px;
+}
+
+.catalog-product {
+  @media screen and(min-width:640px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  @media screen and(min-width:1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+main > * {
+  padding: 0 8px;
+}
+
+.city-restaraunt {
+  margin: 0 0 16px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+}
+
+.product {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  padding-bottom: 36px;
+}
+
+.name-restaraunt {
+  margin-top: 10px;
+}
+
+.text-product-kithen {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+  margin: 4px 0;
+}
+
+footer {
+  position: relative;
+  padding: 40px 8px 24px;
+  background: #1d1d1d;
+  @media screen and(min-width:640px) {
+    padding: 56px 8px 24px;
+  }
+}
+
+.footer-logo {
+  position: relative;
+  img {
+    width: 191px;
+    height: 20px;
+  }
+}
+
+.footer-content {
+  position: relative;
+  @media screen and(min-width:640px) {
+    display: flex;
+    align-items: baseline;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px solid #757575;
+    width: 100%;
+    top: 32px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px solid #757575;
+    width: 100%;
+    bottom: -40px;
+    @media screen and (min-width:640px) {
+      bottom: -20px;
+    }
+  }
+}
+
+.choose-language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 173px;
+  height: 40px;
+  background: #3b3b3b;
+  margin: 74px 0 32px;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  span {
+    color: #49a144;
+  }
+}
+
+.group-icon {
+  display: flex;
+  align-items: center;
+}
+
+.footer-navigation {
+  @media screen and(min-width:640px) {
+    display: flex;
+    flex-grow: 2;
+  }
+}
+
+.nav {
+  @media screen and(min-width:640px) {
+    flex-grow: 1;
+  }
+}
+
+.list-item {
+  margin-bottom: 23px;
+}
+
+.link-item {
+  color: #fff;
+}
+
+.online-market {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.market:nth-child(1) {
+  margin-right: 24px;
+  @media screen and(min-width: 640px) {
+    margin-right: 40px;
+  }
+}
+
+.about-company {
+  margin-top: 65px;
+  @media screen and(min-width: 640px) {
+    margin-top: 81px;
+  }
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px solid #757575;
+    width: 100%;
+    top: -40px;
+  }
+}
+
+.company-info {
+  .list-item {
+    font-size: 11px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+}
+
+.position-block-scroll {
+  position: fixed;
+  bottom: 13%;
+  right: 4%;
+  width: 80px;
+  @media screen and(min-width: 640px) {
+    bottom: 12%;
+    right: 1%;
+  }
+
+  .scroll-up {
+    position: fixed;
+    display: block;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and(min-width: 640px) {
+  .company-info {
+    display: flex;
+  }
+  .company-list {
+    &:nth-of-type(1) {
+      margin-right: 106px;
+    }
+    &:nth-child(2) {
+      margin-right: 200px;
+    }
+  }
+}
