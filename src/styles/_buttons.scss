@@ -1,11 +1,15 @@
 .block-bottom {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   @media screen and(min-width:640px) {
     flex-grow: 1;
     justify-content: flex-end;
     margin-right: 27px;
   }
+}
+
+.block-btn-two {
+  position: relative;
 }
 
 .btn {
@@ -19,7 +23,7 @@
   font-weight: 500;
 }
 
-.block-btn-adress {
+.block-btn-adress_md {
   position: relative;
   &::after {
     content: "to";
@@ -42,6 +46,12 @@
   color: black;
   border-radius: 2px;
   border: 1px solid #e0e0e0;
+  transition: 0.3s;
+  &:hover {
+    background: #262626;
+    color: #fff;
+    border: 1px solid #262626;
+  }
 }
 
 .block-btn {
@@ -73,7 +83,16 @@
   }
 }
 
-.link-adress {
+.input-search {
+  width: 100%;
+  height: 24px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+}
+
+.input-address {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,11 +102,43 @@
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 1px;
+  outline: none;
+}
+
+.input-label_search {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  @media screen and(min-width:1024px) {
+    left: 76px;
+  }
+}
+
+.input-label_address {
+  position: absolute;
+  top: 34px;
+  left: 7px;
+  @media screen and(min-width:640px) {
+    top: 13px;
+  }
+}
+
+.input-address:focus ~ {
+  .input-label_address {
+    display: none;
+  }
+}
+
+.input-search:focus ~ {
+  .input-label_search {
+    display: none;
+  }
 }
 
 .when {
   width: 60px;
   margin-right: 16px;
+  text-align: center;
   @media screen and(min-width:640px) {
     width: 56px;
     margin-right: 32px;
@@ -101,7 +152,7 @@
 .to {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 25px;
   width: 220px;
   @media screen and(min-width:640px) {
     width: 215px;
@@ -109,15 +160,6 @@
 
   @media screen and(min-width:1024px) {
     width: 292px;
-  }
-
-  &::before {
-    content: "";
-    width: 13px;
-    height: 15px;
-    position: relative;
-    right: 10px;
-    background-image: url(../images/location.svg);
   }
 }
 

@@ -10,6 +10,10 @@
   }
 }
 
+.block-btn-two {
+  position: relative;
+}
+
 .btn {
   font-size: 13px;
   line-height: 15px;
@@ -21,10 +25,10 @@
   font-weight: 500;
 }
 
-.block-btn-adress {
+.block-btn-adress_md {
   position: relative;
 }
-.block-btn-adress::after {
+.block-btn-adress_md::after {
   content: "to";
   position: absolute;
   font-size: 16px;
@@ -33,12 +37,12 @@
   top: 10px;
 }
 @media screen and (min-width: 640px) {
-  .block-btn-adress::after {
+  .block-btn-adress_md::after {
     left: 65px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .block-btn-adress::after {
+  .block-btn-adress_md::after {
     left: 71px;
   }
 }
@@ -48,6 +52,12 @@
   color: black;
   border-radius: 2px;
   border: 1px solid #e0e0e0;
+  transition: 0.3s;
+}
+.sign-in:hover {
+  background: #262626;
+  color: #fff;
+  border: 1px solid #262626;
 }
 
 .block-btn {
@@ -82,7 +92,16 @@
   }
 }
 
-.link-adress {
+.input-search {
+  width: 100%;
+  height: 24px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+}
+
+.input-address {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,11 +111,43 @@
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 1px;
+  outline: none;
+}
+
+.input-address:focus ~ .input-label_address {
+  display: none;
+}
+
+.input-search:focus ~ .input-label_search {
+  display: none;
+}
+
+.input-label_search {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .input-label_search {
+    left: 76px;
+  }
+}
+
+.input-label_address {
+  position: absolute;
+  top: 34px;
+  left: 7px;
+}
+@media screen and (min-width: 640px) {
+  .input-label_address {
+    top: 13px;
+  }
 }
 
 .when {
   width: 60px;
   margin-right: 16px;
+  text-align: center;
 }
 @media screen and (min-width: 640px) {
   .when {
@@ -113,7 +164,7 @@
 .to {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 25px;
   width: 220px;
 }
 @media screen and (min-width: 640px) {
@@ -125,14 +176,6 @@
   .to {
     width: 292px;
   }
-}
-.to::before {
-  content: "";
-  width: 13px;
-  height: 15px;
-  position: relative;
-  right: 10px;
-  background-image: url(../images/location.svg);
 }
 
 .choose-language .btn-choose-language {
@@ -280,9 +323,21 @@ a {
   justify-content: space-between;
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
 }
+.header .img_header-logo {
+  min-width: 111px;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0 76px;
+  }
+}
 
 header > div {
   padding: 0 8px;
+}
+
+.header-logo_img {
+  min-width: 111px;
 }
 
 .link-hover:hover {
@@ -296,14 +351,6 @@ header > div {
   margin: 40px 0;
   position: relative;
 }
-.search .search-input {
-  width: 100%;
-  height: 24px;
-  font-size: 13px;
-  border: none;
-  outline: none;
-  margin-left: 13px;
-}
 .search::after {
   content: "";
   display: block;
@@ -312,6 +359,17 @@ header > div {
   top: 33px;
   left: 8px;
   right: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .search::after {
+    left: 76px;
+    right: 76px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .search {
+    padding: 0 76px;
+  }
 }
 
 .text {
@@ -323,6 +381,11 @@ header > div {
 
 main {
   padding: 40px 0 32px;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 40px 76px 32px;
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -357,6 +420,10 @@ main > * {
   padding-bottom: 36px;
 }
 
+.restaraunt-img:hover {
+  transform: scale(1.03);
+}
+
 .name-restaraunt {
   margin-top: 10px;
 }
@@ -376,6 +443,12 @@ footer {
 @media screen and (min-width: 640px) {
   footer {
     padding: 56px 8px 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    padding: 0 76px;
   }
 }
 
@@ -498,9 +571,14 @@ footer {
 }
 
 .company-info .list-item {
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 24px;
   flex-grow: 1;
+}
+@media screen and (min-width: 640px) {
+  .company-info {
+    display: flex;
+  }
 }
 
 .position-block-scroll {
@@ -521,19 +599,6 @@ footer {
 }
 .position-block-scroll .scroll-up:hover {
   transform: scale(1.1);
-}
-
-@media screen and (min-width: 640px) {
-  .company-info {
-    display: flex;
-  }
-
-  .company-list:nth-of-type(1) {
-    margin-right: 106px;
-  }
-  .company-list:nth-child(2) {
-    margin-right: 200px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
