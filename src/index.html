@@ -7,73 +7,73 @@
   </head>
   <body>
     <header>
-      <div class="header">
-      <div class="header-logo">
-        <a href="">
-          <img class="header-logo_img" src="./images/header-logo.svg" alt="">
-        </a>
-      </div>
-      <div class="block-bottom btn-adress block-btn-adress_md md_visible">
-        <div class="block-btn-two btn_two_md">
-          <input class="when input-address" placeholder="ASAP">
+      <div id="block-header" class="block-header">
+        <div class="header-logo">
+          <a href="">
+            <img class="header-logo_img" src="./images/header-logo.svg" alt="header_logo">
+          </a>
         </div>
-        <div class="block-btn-two lg_hidden">
-          <input id="address_md" class="input-address to" placeholder="ul. Bolshaya Dmitrovka,22">
-          <label class="input-label_address" for="address_md">
-            <img class="label-icon" src="./images/location.svg" alt="">
-          </label>
-        </div>
-        <div class="block-btn-two lg_size_visible">
-            <input id="address_lg" class="input-address to" placeholder="ul. Bolshaya Dmitrovka,22">
-            <label class="input-label_address" for="address_lg">
-              <img class="label-icon" src="./images/location.svg" alt="">
+        <div class="block-bottom btn-adress block-btn-adress_md md_visible">
+          <div class="block-btn-two btn_two_md after_content">
+            <input class="delivery_time input-address" placeholder="ASAP">
+          </div>
+          <div class="block-btn-two lg_hidden">
+            <input id="address_md" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+            <label class="input-label_address" for="address_md">
+              <img class="label-icon" src="./images/location.svg" alt="location">
             </label>
           </div>
-      </div>
-      <div class="block-bottom">
-        <div class="block-btn">
-            <a href="" class="btn sign-in">Sign in</a>
+          <div class="block-btn-two lg_size_visible">
+            <input id="address_lg" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+            <label class="input-label_address" for="address_lg">
+              <img class="label-icon" src="./images/location.svg" alt="location">
+            </label>
+          </div>
+        </div>
+        <div class="block-bottom">
+          <div class="block-btn">
+            <a href="" class="btn btn-sign_up">Sign in</a>
           </div>
           <div class="block-btn">
-            <a href="" class="btn regist">Registr</a>
+            <a href="" class="btn btn-registration">Registr</a>
           </div>
+        </div>
+        <div class="icon-basket md_visible">
+          <a href="">
+            <img src="./images/basket.svg" alt="basket">
+          </a>
+        </div>
       </div>
-      <div class="icon-basket md_visible">
-        <a href="">
-          <img src="./images/basket.svg" alt="">
-        </a>
-      </div>
-    </div>
 
     <div class="search">
       <input id="input-search" class="input-search" type="search" placeholder="Search for restaraunt or cuisine">
       <label class="input-label_search" for="input-search">
-        <img class="search-icon" src="./images/Shape.svg" alt="">
+        <img class="search-icon" src="./images/Shape.svg" alt="shape">
       </label>
     </div>
 
     <div class="block-bottom md_hidden">
         <div class="block-btn-two">
           <p class="text">When</p>
-          <input class="when input-address" placeholder="ASAP">
+          <input class="delivery_time input-address" placeholder="ASAP">
         </div>
-        <div class="block-btn-two">
+        <div class="block-btn-two block_width_sm">
           <p class="text">To</p>
-          <input id="address_sd" class="input-address to" placeholder="ul. Bolshaya Dmitrovka,22">
+          <input id="address_sd" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
           <label class="input-label_address" for="address_sd">
-            <img class="label-icon" src="./images/location.svg" alt="">
+            <img class="label-icon" src="./images/location.svg" alt="lacation">
           </label>
         </div>
     </div>
     </header>
     <main class="main-content">
     <h1 class="city-restaraunt lg_hidden">Moscow Restaurants</h1>
-    <h1 class="city-restaraunt lg_size_visible">Kyiv Restaurants</h1>
+    <!-- <h1 class="city-restaraunt lg_size_visible">Kyiv Restaurants</h1> -->
     <div class="catalog-product">
       <div class="product">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/mac.svg" alt="">
+            <img class="restaraunt-img" src="./images/mac.svg" alt="mac">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -92,7 +92,7 @@
       <div class="product">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/dimSum.svg" alt="">
+            <img class="restaraunt-img" src="./images/dimSum.svg" alt="dimSum">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -111,7 +111,7 @@
       <div class="product">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/dvijOk.svg" alt="">
+            <img class="restaraunt-img" src="./images/dvijOk.svg" alt="dvijOk">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -130,7 +130,7 @@
       <div class="product">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/nha.svg" alt="">
+            <img class="restaraunt-img" src="./images/nha.svg" alt="nha">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -149,7 +149,7 @@
       <div class="product md-lg_size">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/point_dzi.svg" alt="">
+            <img class="restaraunt-img" src="./images/point_dzi.svg" alt="pointdzi">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -167,7 +167,7 @@
       <div class="product md-lg_size">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/cinnabon.svg" alt="">
+            <img class="restaraunt-img" src="./images/cinnabon.svg" alt="cinnabon">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -186,7 +186,7 @@
       <div class="product md-lg_size">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/pizzelone.svg" alt="">
+            <img class="restaraunt-img" src="./images/pizzelone.svg" alt="pizzelone">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -205,7 +205,7 @@
       <div class="product md-lg_size">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/zu_caffe.svg" alt="">
+            <img class="restaraunt-img" src="./images/zu_caffe.svg" alt="zuCaffe">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -224,7 +224,7 @@
       <div class="product md-lg_size">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/bq_bar.svg" alt="">
+            <img class="restaraunt-img" src="./images/bq_bar.svg" alt="bq_bar">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -246,7 +246,7 @@
     <div class="footer-container">
       <div class="footer-logo">
         <a href="">
-          <img src="./images/footer-logo.svg" alt="">
+          <img src="./images/footer-logo.svg" alt="footer_logo">
         </a>
       </div>
       <div class="footer-content">
@@ -254,26 +254,26 @@
           <div class="choose-language">
             <a href="" class="btn-choose-language">
               <span class="icon">
-                <img class="icon-world" src="./images/world.svg" alt="">
+                <img class="icon-world" src="./images/world.svg" alt="world">
               </span>
               English
               <span class="icon">
-                <img class="icon-arrow" src="./images/arrow.svg" alt="">
+                <img class="icon-arrow" src="./images/arrow.svg" alt="arrow">
               </span>
             </a>
           </div>
 
           <div class="soc-icon">
-          <p class="footer-text"><span>#</span>UberEats</p>
+          <p class="footer-text"><span class="footer_tag-symbol">#</span>UberEats</p>
           <div class="group-icon">
             <a href="" class="link-hover">
-              <img class="facebook" src="./images/facebook.svg" alt="">
+              <img class="facebook" src="./images/facebook.svg" alt="fb">
             </a>
             <a href="" class="link-hover">
-              <img class="twiter" src="./images/twiter.svg" alt="">
+              <img class="twiter" src="./images/twiter.svg" alt="tw">
             </a>
             <a href="" class="link-hover">
-              <img class="union" src="./images/union.svg" alt="">
+              <img class="union" src="./images/union.svg" alt="union">
             </a>
           </div>
           </div>
@@ -310,12 +310,12 @@
     <div class="online-market">
       <div class="market">
         <a href="">
-          <img class="app_store" src="./images/app_store.svg" alt="">
+          <img class="app_store" src="./images/app_store.svg" alt="app_store">
         </a>
       </div>
       <div class="market">
         <a href="">
-          <img class="google" src="./images/google_play.svg" alt="">
+          <img class="google" src="./images/google_play.svg" alt="g_play">
         </a>
         </div>
     </div>
@@ -333,12 +333,13 @@
       </ul>
     </div>
     <div class="position-block-scroll">
-      <a href="" class="scroll-up">
-        <img src="./images/btn-up.svg" alt="ffefe">
+      <a href="#block-header" class="scroll-up">
+        <img src="./images/btn-up.svg" alt="scroll_up">
       </a>
     </div>
     </div>
   </footer>
-  <script type="text/javascript" src="cripts/main.js"></script>
+
+  <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

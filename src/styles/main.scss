@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.header {
+.block-header {
   height: 72px;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
   }
 }
 
-header > div {
+.block-header > div {
   padding: 0 8px;
 }
 
@@ -34,6 +34,10 @@ header > div {
 
 .link-hover:hover {
   transform: scale(1.2);
+}
+
+.block_width_sm {
+  flex-grow: 1;
 }
 
 .search {
@@ -263,18 +267,18 @@ footer {
 }
 
 .position-block-scroll {
-  position: fixed;
-  bottom: 13%;
+  position: absolute;
+  bottom: 11%;
   right: 4%;
   width: 80px;
 
   @media screen and(min-width: 640px) {
-    bottom: 12%;
     right: 1%;
+    bottom: 15%;
   }
 
   .scroll-up {
-    position: fixed;
+    position: absolute;
     display: block;
     &:hover {
       transform: scale(1.1);

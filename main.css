@@ -25,10 +25,7 @@
   font-weight: 500;
 }
 
-.block-btn-adress_md {
-  position: relative;
-}
-.block-btn-adress_md::after {
+.after_content::after {
   content: "to";
   position: absolute;
   font-size: 16px;
@@ -37,24 +34,24 @@
   top: 10px;
 }
 @media screen and (min-width: 640px) {
-  .block-btn-adress_md::after {
+  .after_content::after {
     left: 65px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .block-btn-adress_md::after {
-    left: 71px;
+  .after_content::after {
+    left: 73px;
   }
 }
 
-.sign-in {
+.btn-sign_up {
   background: #fff;
   color: black;
   border-radius: 2px;
   border: 1px solid #e0e0e0;
   transition: 0.3s;
 }
-.sign-in:hover {
+.btn-sign_up:hover {
   background: #262626;
   color: #fff;
   border: 1px solid #262626;
@@ -69,7 +66,7 @@
   margin-right: 12px;
 }
 
-.regist {
+.btn-registration {
   background: #262626;
   color: white;
   border: 1px solid #262626;
@@ -89,6 +86,7 @@
 @media screen and (min-width: 1024px) {
   .btn-adress {
     margin-left: 135px;
+    justify-content: flex-end;
   }
 }
 
@@ -144,36 +142,36 @@
   display: none;
 }
 
-.when {
+.delivery_time {
   width: 60px;
   margin-right: 16px;
   text-align: center;
 }
 @media screen and (min-width: 640px) {
-  .when {
+  .delivery_time {
     width: 56px;
     margin-right: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .when {
+  .delivery_time {
     width: 65px;
   }
 }
 
-.to {
+.delivery_address {
   display: flex;
   justify-content: flex-start;
   padding-left: 25px;
-  width: 220px;
+  width: 100%;
 }
 @media screen and (min-width: 640px) {
-  .to {
+  .delivery_address {
     width: 215px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .to {
+  .delivery_address {
     width: 292px;
   }
 }
@@ -316,23 +314,23 @@ a {
   box-sizing: border-box;
 }
 
-.header {
+.block-header {
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
 }
-.header .img_header-logo {
+.block-header .img_header-logo {
   min-width: 111px;
 }
 @media screen and (min-width: 1024px) {
-  .header {
+  .block-header {
     padding: 0 76px;
   }
 }
 
-header > div {
+.block-header > div {
   padding: 0 8px;
 }
 
@@ -342,6 +340,10 @@ header > div {
 
 .link-hover:hover {
   transform: scale(1.2);
+}
+
+.block_width_sm {
+  flex-grow: 1;
 }
 
 .search {
@@ -574,19 +576,19 @@ footer {
 }
 
 .position-block-scroll {
-  position: fixed;
-  bottom: 13%;
+  position: absolute;
+  bottom: 11%;
   right: 4%;
   width: 80px;
 }
 @media screen and (min-width: 640px) {
   .position-block-scroll {
-    bottom: 12%;
     right: 1%;
+    bottom: 15%;
   }
 }
 .position-block-scroll .scroll-up {
-  position: fixed;
+  position: absolute;
   display: block;
 }
 .position-block-scroll .scroll-up:hover {
