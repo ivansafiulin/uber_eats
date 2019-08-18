@@ -454,6 +454,10 @@ footer {
   }
 }
 
+.footer_tag-symbol {
+  color: #49a144;
+}
+
 .footer-content {
   position: relative;
 }
