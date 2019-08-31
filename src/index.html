@@ -8,49 +8,53 @@
   <body>
     <header>
       <div id="block-header" class="block-header">
-        <div class="header-logo">
-          <a href="">
-            <img class="header-logo_img" src="./images/header-logo.svg" alt="header_logo">
-          </a>
-        </div>
-        <div class="block-bottom btn-adress block-btn-adress_md md_visible">
-          <div class="block-btn-two btn_two_md after_content">
-            <input class="delivery_time input-address" placeholder="ASAP">
+        <div class="block-header__container">
+          <div class="header-logo">
+            <a href="">
+              <img class="header-logo_img" src="./images/header-logo.svg" alt="uber eats logo">
+            </a>
           </div>
-          <div class="block-btn-two lg_hidden">
-            <input id="address_md" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
-            <label class="input-label_address" for="address_md">
-              <img class="label-icon" src="./images/location.svg" alt="location">
-            </label>
+          <div class="block-bottom btn-adress block-btn-adress_md md_visible">
+            <div class="block-btn-two btn_two_md after_content">
+              <input class="delivery_time input-address" placeholder="ASAP">
+            </div>
+            <div class="block-btn-two lg_hidden">
+              <input id="address_md" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+              <label class="input-label_address" for="address_md">
+                <img class="label-icon" src="./images/location.svg" alt="location">
+              </label>
+            </div>
+            <div class="block-btn-two lg_size_visible">
+              <input id="address_lg" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+              <label class="input-label_address" for="address_lg">
+                <img class="label-icon" src="./images/location.svg" alt="location">
+              </label>
+            </div>
           </div>
-          <div class="block-btn-two lg_size_visible">
-            <input id="address_lg" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
-            <label class="input-label_address" for="address_lg">
-              <img class="label-icon" src="./images/location.svg" alt="location">
-            </label>
+          <div class="block-bottom">
+            <div class="block-btn">
+              <a href="" class="btn btn-sign_up">Sign in</a>
+            </div>
+            <div class="block-btn">
+              <a href="" class="btn btn-registration">Register</a>
+            </div>
           </div>
-        </div>
-        <div class="block-bottom">
-          <div class="block-btn">
-            <a href="" class="btn btn-sign_up">Sign in</a>
+          <div class="icon-basket md_visible">
+            <a href="">
+              <img src="./images/basket.svg" alt="basket">
+            </a>
           </div>
-          <div class="block-btn">
-            <a href="" class="btn btn-registration">Registr</a>
-          </div>
-        </div>
-        <div class="icon-basket md_visible">
-          <a href="">
-            <img src="./images/basket.svg" alt="basket">
-          </a>
         </div>
       </div>
 
-    <div class="search">
-      <input id="input-search" class="input-search" type="search" placeholder="Search for restaraunt or cuisine">
-      <label class="input-label_search" for="input-search">
-        <img class="search-icon" src="./images/Shape.svg" alt="shape">
-      </label>
-    </div>
+    <div class="contaner__search">
+      <div class="search">
+        <input id="input-search" class="input-search" type="search" placeholder="Search for restaraunt or cuisine">
+        <label class="input-label_search" for="input-search">
+          <img class="search-icon" src="./images/Shape.svg" alt="shape">
+        </label>
+      </div>
+  </div>
 
     <div class="block-bottom md_hidden">
         <div class="block-btn-two">
@@ -67,8 +71,7 @@
     </div>
     </header>
     <main class="main-content">
-    <h1 class="city-restaraunt lg_hidden">Moscow Restaurants</h1>
-    <!-- <h1 class="city-restaraunt lg_size_visible">Kyiv Restaurants</h1> -->
+    <h1 class="city-restaraunt">Moscow Restaurants</h1>
     <div class="catalog-product">
       <div class="product">
         <div class="block-restaraunt-img">
@@ -224,7 +227,7 @@
       <div class="product md-lg_size">
         <div class="block-restaraunt-img">
           <a href="">
-            <img class="restaraunt-img" src="./images/bq_bar.svg" alt="bq_bar">
+            <img class="restaraunt-img" src="./images/bq_bar.svg" alt="bqbar">
           </a>
         </div>
         <div class="product-restaraunt">
@@ -246,13 +249,13 @@
     <div class="footer-container">
       <div class="footer-logo">
         <a href="">
-          <img src="./images/footer-logo.svg" alt="footer_logo">
+          <img src="./images/footer-logo.svg" alt="uber eats logo">
         </a>
       </div>
       <div class="footer-content">
         <div class="block_language-soc_icon">
           <div class="choose-language">
-            <a href="" class="btn-choose-language">
+            <button class="btn-choose-language">
               <span class="icon">
                 <img class="icon-world" src="./images/world.svg" alt="world">
               </span>
@@ -260,7 +263,7 @@
               <span class="icon">
                 <img class="icon-arrow" src="./images/arrow.svg" alt="arrow">
               </span>
-            </a>
+            </button>
           </div>
 
           <div class="soc-icon">
@@ -269,13 +272,13 @@
           </p>
           <div class="group-icon">
             <a href="" class="link-hover">
-              <img class="facebook" src="./images/facebook.svg" alt="fb">
+              <img class="facebook" src="./images/facebook.svg" alt="facebook link">
             </a>
             <a href="" class="link-hover">
-              <img class="twiter" src="./images/twiter.svg" alt="tw">
+              <img class="twiter" src="./images/twiter.svg" alt="twitter link">
             </a>
             <a href="" class="link-hover">
-              <img class="union" src="./images/union.svg" alt="union">
+              <img class="union" src="./images/union.svg" alt="union link">
             </a>
           </div>
           </div>
@@ -312,12 +315,12 @@
     <div class="online-market">
       <div class="market">
         <a href="">
-          <img class="app_store" src="./images/app_store.svg" alt="app_store">
+          <img class="application app_store" src="./images/app_store.svg" alt="app store">
         </a>
       </div>
       <div class="market">
         <a href="">
-          <img class="google" src="./images/google_play.svg" alt="g_play">
+          <img class="application google" src="./images/google_play.svg" alt="google play">
         </a>
         </div>
     </div>
@@ -335,9 +338,9 @@
       </ul>
     </div>
     <div class="position-block-scroll">
-      <a href="#block-header" class="scroll-up">
-        <img src="./images/btn-up.svg" alt="scroll_up">
-      </a>
+      <button class="scroll-up">
+        <img src="./images/btn-up.svg" alt="scroll up">
+      </button>
     </div>
     </div>
   </footer>
