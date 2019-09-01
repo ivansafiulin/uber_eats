@@ -1,0 +1,32 @@
+.md-lg_size {
+  display: none;
+  @media screen and(min-width:640px) {
+    display: block;
+  }
+}
+
+.lg_size_visible {
+  display: none;
+}
+
+.md_visible {
+  display: none;
+}
+
+@media screen and(min-width:640px) {
+  .md_hidden {
+    display: none;
+  }
+  .md_visible {
+    display: flex;
+  }
+}
+
+@media screen and(min-width:1024px) {
+  .lg_size_visible {
+    display: block;
+  }
+  .lg_hidden {
+    display: none;
+  }
+}

@@ -1,37 +1,31 @@
+// @import "utils";
 @import "buttons";
 @import "images";
 @import "reset";
 @import "display";
-@import "mixins";
 @import "fonts";
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto";
-  font-weight: 400;
-}
+ }
 
 .block-header {
-  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
-}
-
-.block-header__container {
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1024px;
-  height: 74px;
-  margin: 0 auto;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
 
   .img_header-logo {
     min-width: 111px;
   }
+
+  @media screen and(min-width:1024px) {
+    padding: 0 76px;
+  }
 }
 
-.block-header__container > div {
+.block-header > div {
   padding: 0 8px;
 }
 
@@ -41,16 +35,10 @@ body {
 
 .link-hover:hover {
   transform: scale(1.2);
-  transition-duration: 0.15s;
 }
 
 .block_width_sm {
   flex-grow: 1;
-}
-
-.contaner__search {
-  margin: 0 auto;
-  max-width: 1024px;
 }
 
 .search {
@@ -69,6 +57,14 @@ body {
     left: 8px;
     right: 8px;
 
+    @media screen and(min-width:1024px) {
+      left: 76px;
+      right: 76px;
+    }
+  }
+
+  @media screen and(min-width:1024px) {
+    padding: 0 76px;
   }
 }
 
@@ -83,14 +79,11 @@ main {
   padding: 40px 0 32px;
 
   @media screen and(min-width:1024px) {
-    padding: 40px 0 32px;
+    padding: 40px 76px 32px;
   }
 }
 
 .catalog-product {
-  max-width: 1024px;
-  margin: 0 auto;
-
   @media screen and(min-width:640px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -108,8 +101,7 @@ main > * {
 }
 
 .city-restaraunt {
-  max-width: 1024px;
-  margin: 0 auto 16px;
+  margin: 0 0 16px;
   font-size: 22px;
   line-height: 34px;
   color: #1d1d1d;
@@ -120,9 +112,11 @@ main > * {
   line-height: 24px;
   color: #1d1d1d;
   padding-bottom: 36px;
+}
 
-  @media screen and(min-width:640px) {
-    @include hover_product(background-color, rgba(100, 100, 100, 0.06));
+.restaraunt-img {
+  &:hover {
+    transform: scale(1.03);
   }
 }
 
@@ -147,13 +141,14 @@ footer {
   }
 }
 
-.footer-container {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
 .footer_tag-symbol {
   color: #49a144;
+}
+
+.footer-container {
+  @media screen and(min-width:1024px) {
+    padding: 0 76px;
+  }
 }
 
 .footer-content {
@@ -180,8 +175,7 @@ footer {
     border-top: 1px solid #757575;
     width: 100%;
     bottom: -40px;
-
-    @media screen and(min-width:640px) {
+    @media screen and (min-width:640px) {
       bottom: -20px;
     }
   }
@@ -193,13 +187,8 @@ footer {
   justify-content: center;
   width: 173px;
   height: 40px;
+  background: #3b3b3b;
   margin: 74px 0 32px;
-}
-
-.btn-choose-language {
-  background-color: #3b3b3b;
-  border: none;
-  outline: none;
 }
 
 .footer-text {
@@ -241,8 +230,7 @@ footer {
 .online-market {
   display: flex;
   justify-content: center;
-  margin-top: 55px;
-  padding: 10px 0;
+  margin-top: 65px;
 }
 
 .market:nth-child(1) {
@@ -254,10 +242,10 @@ footer {
 }
 
 .about-company {
-  margin-top: 55px;
+  margin-top: 65px;
 
   @media screen and(min-width: 640px) {
-    margin-top: 71px;
+    margin-top: 81px;
   }
 
   position: relative;
@@ -297,12 +285,8 @@ footer {
   .scroll-up {
     position: absolute;
     display: block;
-    border: none;
-    outline: none;
-    background-color: #59bd5a;
     &:hover {
       transform: scale(1.1);
-      transition-duration: 0.3s;
     }
   }
 }

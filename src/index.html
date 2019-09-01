@@ -6,8 +6,345 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header>
+      <div id="block-header" class="block-header">
+        <div class="block-header__container">
+          <div class="header-logo">
+            <a href="">
+              <img class="header-logo_img" src="./images/header-logo.svg" alt="uber eats logo">
+            </a>
+          </div>
+          <div class="block-bottom btn-adress block-btn-adress_md md_visible">
+            <div class="block-btn-two btn_two_md after_content">
+              <input class="delivery_time input-address" placeholder="ASAP">
+            </div>
+            <div class="block-btn-two lg_hidden">
+              <input id="address_md" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+              <label class="input-label_address" for="address_md">
+                <img class="label-icon" src="./images/location.svg" alt="location">
+              </label>
+            </div>
+            <div class="block-btn-two lg_size_visible">
+              <input id="address_lg" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+              <label class="input-label_address" for="address_lg">
+                <img class="label-icon" src="./images/location.svg" alt="location">
+              </label>
+            </div>
+          </div>
+          <div class="block-bottom">
+            <div class="block-btn">
+              <a href="" class="btn btn-sign_up">Sign in</a>
+            </div>
+            <div class="block-btn">
+              <a href="" class="btn btn-registration">Register</a>
+            </div>
+          </div>
+          <div class="icon-basket md_visible">
+            <a href="">
+              <img src="./images/basket.svg" alt="basket">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <div class="contaner__search">
+      <div class="search">
+        <input id="input-search" class="input-search" type="search" placeholder="Search for restaraunt or cuisine">
+        <label class="input-label_search" for="input-search">
+          <img class="search-icon" src="./images/Shape.svg" alt="shape">
+        </label>
+      </div>
+  </div>
+
+    <div class="block-bottom md_hidden">
+        <div class="block-btn-two">
+          <p class="text">When</p>
+          <input class="delivery_time input-address" placeholder="ASAP">
+        </div>
+        <div class="block-btn-two block_width_sm">
+          <p class="text">To</p>
+          <input id="address_sd" class="input-address delivery_address" placeholder="ul. Bolshaya Dmitrovka,22">
+          <label class="input-label_address" for="address_sd">
+            <img class="label-icon" src="./images/location.svg" alt="lacation">
+          </label>
+        </div>
+    </div>
+    </header>
+    <main class="main-content">
+    <h1 class="city-restaraunt">Moscow Restaurants</h1>
+    <div class="catalog-product">
+      <div class="product">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/mac.svg" alt="mac">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">Макдоналдс — Газетный</h3>
+          <h3 class="name-restaraunt lg_size_visible">Макдоналдс</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽₽ • Бургеры</p>
+          <p class="text-product-kithen lg_size_visible">$$ • Бургеры</p>
+        </div>
+        <div class="time-waiting">
+          <p>25 - 35 Min</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/dimSum.svg" alt="dimSum">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">DimSum & Co — ЦДМ</h3>
+          <h3 class="name-restaraunt lg_size_visible">WOKWEI</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽ • Японская • Китайская • Азиатская</p>
+          <p class="text-product-kithen lg_size_visible">₴ • Китайська • Азіатська</p>
+        </div>
+        <div class="time-waiting">
+          <p>40 - 50 Min</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/dvijOk.svg" alt="dvijOk">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">ДвижОК — Манежная</h3>
+          <h3 class="name-restaraunt lg_size_visible">YIZHA</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽ • Американская • Европейская</p>
+          <p class="text-product-kithen lg_size_visible">₴₴ • Американська • Бургери • Вулична їжа</p>
+        </div>
+        <div class="time-waiting">
+          <p>35 - 45 Min</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/nha.svg" alt="nha">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">НЯ — NHA</h3>
+          <h3 class="name-restaraunt lg_size_visible">Musafir (вул. Саксаганського)</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽₽ • Вьетнамская</p>
+          <p class="text-product-kithen lg_size_visible">₴₴ • Близькосхідна</p>
+        </div>
+        <div class="time-waiting">
+          <p>30 - 40 Min</p>
+        </div>
+      </div>
+
+      <div class="product md-lg_size">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/point_dzi.svg" alt="pointdzi">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">Точка Дзы — Цветной</h3>
+          <h3 class="name-restaraunt lg_size_visible">WOKWEI</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽₽ • Вьетнамская</p>
+          <p class="text-product-kithen lg_size_visible">₴ • Китайська • Азіатська</p>
+        </div>
+        <div class="time-waiting">
+          <p>40 - 50 Min</p>
+        </div>
+      </div>
+      <div class="product md-lg_size">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/cinnabon.svg" alt="cinnabon">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">Cinnabon</h3>
+          <h3 class="name-restaraunt lg_size_visible">Milk Bar</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen">₽ • Выпечка • Десерты • Капкейки</p>
+          <p class="text-product-kithen lg_size_visible">₴₴ • Десерти • Європейська</p>
+        </div>
+        <div class="time-waiting">
+          <p>25 - 35 Min</p>
+        </div>
+      </div>
+
+      <div class="product md-lg_size">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/pizzelone.svg" alt="pizzelone">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">PIZZELOVE</h3>
+          <h3 class="name-restaraunt lg_size_visible">Mimosa Brooklyn Pizza</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen">₽₽ • Пицца</p>
+          <p class="text-product-kithen lg_size_visible">₴₴ • Італійська • Піца • Американська</p>
+        </div>
+        <div class="time-waiting">
+          <p>15 - 25 Min</p>
+        </div>
+      </div>
+
+      <div class="product md-lg_size">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/zu_caffe.svg" alt="zuCaffe">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">Zю кафе — Тверская</h3>
+          <h3 class="name-restaraunt lg_size_visible">To Be</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽₽ • Японская</p>
+          <p class="text-product-kithen lg_size_visible">₴₴ • Японська • Азіатська • Суші</p>
+        </div>
+        <div class="time-waiting">
+          <p>25 - 35 Min</p>
+        </div>
+      </div>
+
+      <div class="product md-lg_size">
+        <div class="block-restaraunt-img">
+          <a href="">
+            <img class="restaraunt-img" src="./images/bq_bar.svg" alt="bqbar">
+          </a>
+        </div>
+        <div class="product-restaraunt">
+          <h3 class="name-restaraunt lg_hidden">Bar BQ Cafe — Манежная</h3>
+          <h3 class="name-restaraunt lg_size_visible">Druzi Cafe (вул. Прорізна)</h3>
+        </div>
+        <div class="product-kithen">
+          <p class="text-product-kithen lg_hidden">₽₽₽ • Европейская</p>
+          <p class="text-product-kithen lg_size_visible">₴₴ • Американська • Сучасна європейська • У...</p>
+        </div>
+        <div class="time-waiting">
+          <p>30 - 40 Min</p>
+        </div>
+      </div>
+    </div>
+    </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="">
+          <img src="./images/footer-logo.svg" alt="uber eats logo">
+        </a>
+      </div>
+      <div class="footer-content">
+        <div class="block_language-soc_icon">
+          <div class="choose-language">
+            <button class="btn-choose-language">
+              <span class="icon">
+                <img class="icon-world" src="./images/world.svg" alt="world">
+              </span>
+              English
+              <span class="icon">
+                <img class="icon-arrow" src="./images/arrow.svg" alt="arrow">
+              </span>
+            </button>
+          </div>
+
+          <div class="soc-icon">
+          <p class="footer-text">
+            <span class="footer_tag-symbol">#</span>UberEats
+          </p>
+          <div class="group-icon">
+            <a href="" class="link-hover">
+              <img class="facebook" src="./images/facebook.svg" alt="facebook link">
+            </a>
+            <a href="" class="link-hover">
+              <img class="twiter" src="./images/twiter.svg" alt="twitter link">
+            </a>
+            <a href="" class="link-hover">
+              <img class="union" src="./images/union.svg" alt="union link">
+            </a>
+          </div>
+          </div>
+      </div>
+      <nav class="footer-navigation">
+        <ul class="nav main-info">
+          <li class="list-item">
+            <a href="" class="link-item">About UberEats</a>
+          </li>
+          <li class="list-item">
+            <a href="" class="link-item">Become a Delivery Partner</a>
+          </li>
+          <li class="list-item">
+            <a href="" class="link-item">Become a Restaurant Partner</a>
+          </li>
+        </ul>
+        <ul class="nav dop-info">
+            <li class="list-item">
+              <a href="" class="link-item">See all cities</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link-item">Pricing</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link-item">Help</a>
+            </li>
+            <li class="list-item">
+              <a href="" class="link-item">FAQs</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="online-market">
+      <div class="market">
+        <a href="">
+          <img class="application app_store" src="./images/app_store.svg" alt="app store">
+        </a>
+      </div>
+      <div class="market">
+        <a href="">
+          <img class="application google" src="./images/google_play.svg" alt="google play">
+        </a>
+        </div>
+    </div>
+    <div class="about-company">
+      <ul class="nav company-info">
+        <li class="list-item company-list">
+          <a href="" class="link-item">© 2017 Uber Technologies Inc.</a>
+        </li>
+        <li class="list-item company-list">
+          <a href="" class="link-item">Privacy</a>
+        </li>
+        <li class="list-item company-list">
+          <a href="" class="link-item">Terms</a>
+        </li>
+      </ul>
+    </div>
+    <div class="position-block-scroll">
+      <button class="scroll-up">
+        <img src="./images/btn-up.svg" alt="scroll up">
+      </button>
+    </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
